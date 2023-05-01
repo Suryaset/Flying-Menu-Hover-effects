@@ -1,0 +1,78 @@
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    transition: .4s ease-out;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
+  }
+
+  .list{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list li{
+    list-style: none;
+  }
+
+  .list li a{
+    position: relative;
+    display: flex;
+    font-size: 4em;
+    line-height: 1em;
+    color: bisque;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .list li:first-child a{
+    color: lightgreen;
+  }
+  .list li:nth-child(2) a{
+    color: bisque;
+  }
+  .list li:nth-child(3) a{
+    color: lightgrey;
+  }
+  .list li:nth-child(4) a{
+    color: lightseagreen;
+  }
+  .list li:nth-child(5) a{
+    color: lightcyan;
+  }
+  .list li:nth-child(5) a{
+    color: lightsalmon;
+  }
+  .list li a span{
+    position: relative;
+    transition: .5s;
+    overflow: hidden;
+  }
+
+  .list li a span .out{
+    display: inline-flex;
+  }
+  .list li a span .in{
+    position: absolute;
+    left: 0;
+    color: cyan;
+    transform: translateY(100%);
+  }
+
+  .list li a:hover span .out{
+    transform: translateY(-100%);
+  } 
+
+  .list li a:hover span .in{
+    transform: translateY(0);
+    
+  } 
